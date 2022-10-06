@@ -1,7 +1,9 @@
 var count=0
 
-var songs = ["A.mp3","B.mp3","C.mp3","D.mp3"];
-var path = 'C:\\Users\\kundu\\MusicPlayer\\resources\\';
+var songs = ["A","B","C","D"];
+var songPath = 'C:\\Users\\kundu\\MusicPlayer\\resources\\';
+var imgPath = 'C:\\Users\\kundu\\MusicPlayer\\resources\\img\\';
+
 var a=document.getElementById("audio");
 
 
@@ -15,7 +17,8 @@ function nextSong(){
     count++;
 
     console.log(count,songs.length-1);
-    document.getElementById("audio").src=path+songs[count];
+    document.getElementById("songimg").src=imgPath+songs[count]+".jpg";
+    document.getElementById("audio").src=songPath+songs[count]+ ".mp3";
     a.load();
 
 }
@@ -29,7 +32,8 @@ function prevSong()
     else
     count--;
     console.log(count);
-    document.getElementById("audio").src=path+songs[count];
+    document.getElementById("audio").src=songPath+songs[count]+".mp3";
+    document.getElementById("songimg").src=imgPath+songs[count]+".jpg";
     a.load();
 
 }
