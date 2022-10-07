@@ -38,3 +38,30 @@ function prevSong()
 
 }
 
+function generateRandom(min = 0,max =4)
+{
+   let difference =max-min;
+
+   let rand = Math.random();
+
+   rand = Math.floor(rand * difference);
+
+   rand = rand + min;
+
+   return rand;
+
+}
+
+function shuffleSong()
+{
+   let randIndex=generateRandom()
+   
+   console.log(randIndex);
+
+   document.getElementById("audio").src=songPath+songs[randIndex]+".mp3";
+   document.getElementById("songimg").src=imgPath+songs[randIndex]+".jpg";
+   count=randIndex;
+   a.load();
+
+}
+
