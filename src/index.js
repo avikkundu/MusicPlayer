@@ -60,6 +60,7 @@ function shuffleSong()
 
    document.getElementById("audio").src=songPath+songs[randIndex]+".mp3";
    document.getElementById("songimg").src=imgPath+songs[randIndex]+".jpg";
+   count=randIndex;
    a.load();
 
 }
