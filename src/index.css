@@ -1,0 +1,83 @@
+/*#play {
+    background-image: url("C:\\Users\\kundu\\MusicPlayer\\resources\\button_img\\play.jpg");
+    background-size: cover;
+    color: blueviolet;
+}*/
+
+body {
+    background-image: url("C:\\Users\\kundu\\MusicPlayer\\resources\\background\\bodyBg.png");
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+#play {
+
+    position: absolute;
+    top: 480px;
+    left: 100px;
+}
+
+#pause {
+    position: absolute;
+    top: 480px;
+    left: 250px;
+}
+
+#volup {
+    position: absolute;
+    top: 480px;
+    left: 400px;
+}
+
+#voldown {
+    position: absolute;
+    top: 480px;
+    left: 550px;
+}
+
+#next {
+    position: absolute;
+    top: 480px;
+    left: 700px;
+}
+
+#prev {
+    position: absolute;
+    top: 480px;
+    left: 850px;
+}
+
+#shuffle {
+    position: absolute;
+    top: 480px;
+    left: 1000px;
+}
+
+#songimg {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    width: 800px;
+    height: 400px;
+}
