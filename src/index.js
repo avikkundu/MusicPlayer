@@ -17,6 +17,7 @@ function nextSong(){
     count++;
 
     console.log(count,songs.length-1);
+    console.log(imgPath+songs[count]+".jpg");
     document.getElementById("songimg").src=imgPath+songs[count]+".jpg";
     document.getElementById("audio").src=songPath+songs[count]+ ".mp3";
     a.load();
