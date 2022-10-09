@@ -1,7 +1,7 @@
 var count=0
 
-var songs = ["A","B","C","D"];
-var songPath = 'C:\\Users\\kundu\\MusicPlayer\\resources\\';
+var songs = ["A","B","C","D","E","F","G"];
+var songPath = 'C:\\Users\\kundu\\MusicPlayer\\resources\\songs\\';
 var imgPath = 'C:\\Users\\kundu\\MusicPlayer\\resources\\img\\';
 
 var a=document.getElementById("audio");
@@ -17,7 +17,7 @@ function nextSong(){
     count++;
 
     console.log(count,songs.length-1);
-    console.log(imgPath+songs[count]+".jpg");
+    console.log(songPath+songs[count]+".mp3");
     document.getElementById("songimg").src=imgPath+songs[count]+".jpg";
     document.getElementById("audio").src=songPath+songs[count]+ ".mp3";
     a.load();
@@ -39,7 +39,7 @@ function prevSong()
 
 }
 
-function generateRandom(min = 0,max =4)
+function generateRandom(min = 0,max =6)
 {
    let difference =max-min;
 
