@@ -1,6 +1,6 @@
 # MusicPlayer
 
-This is a standard replica of the windows music player with some pre loaded songs.
+This is a standard replica of the windows media player with some pre loaded songs.
 
 It has play,pause,next,prev,volume buttons and shuffle option.
 
